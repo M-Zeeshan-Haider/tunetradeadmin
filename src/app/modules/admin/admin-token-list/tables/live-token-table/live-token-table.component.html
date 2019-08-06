@@ -1,0 +1,29 @@
+<div class="tokenViewDiv">
+        <app-live-token-view @tokenViewAnimation (closeViewTrgger)="closeView($event)" *ngIf="viewToken" [token]="viewToken"></app-live-token-view>
+</div>
+<div class="table-responsive">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>Token Name</th>
+            <th>Symbol</th>
+            <th>Contract Address</th>
+            <th>Decimal</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let token of liveTokens">
+                <td>{{token.fullName}}</td>
+                <td>{{token.name}}</td>
+                <td>{{token.addr}}</td>
+                <td>{{token.decimals}}</td>
+                <td class="viewButton">
+                    <button class="btn table-button" (click)="showToken(token)">View</button>
+                    <button class="btn table-button" (click)="removeToken(token)">Remove</button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        
+</div>

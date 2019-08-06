@@ -1,0 +1,28 @@
+<div class="tokenViewDiv">
+        <app-admin-list-token-view @tokenViewAnimation (closeViewTrgger)="closeView($event)" (refreshTableTrigger) = "refreshTable($event)" *ngIf="viewToken" [token]="viewToken"></app-admin-list-token-view>
+</div>
+<div class="table-responsive">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>Token Name</th>
+            <th>Symbol</th>
+            <th>Contract Address</th>
+            <th>Decimal</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let token of tokens">
+                <td>{{token.name}}</td>
+                <td>{{token.symbol}}</td>
+                <td>{{token.ethAddress}}</td>
+                <td>{{token.decimals}}</td>
+                <td class="viewButton">
+                    <button class="btn table-button" (click)="showToken(token)">View</button>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        
+</div>

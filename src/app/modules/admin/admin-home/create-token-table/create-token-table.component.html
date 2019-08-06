@@ -1,0 +1,27 @@
+<div *ngIf="!showToken" class="table-responsive">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th>Token Name</th>
+            <th>Symbol</th>
+            <th>Total Supply</th>
+            <th>Decimal</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let token of tokens">
+                <td>{{token.tokenName}}</td>
+                <td>{{token.tokenSymbol}}</td>
+                <td>{{token.totalSupply}}</td>
+                <td>{{token.decimals}}</td>
+                <td class="viewButton"><button class="btn table-button" (click)="showTokenTrigger(token)">View</button></td>
+            </tr>
+        </tbody>
+        </table>
+        
+</div>
+<div *ngIf="showToken">
+    <app-admin-token-view (closingTrigger)="closeView($event)" [token]="viewToken"></app-admin-token-view>
+</div>
+

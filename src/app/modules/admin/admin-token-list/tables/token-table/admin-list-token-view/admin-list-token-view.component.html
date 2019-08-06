@@ -1,0 +1,61 @@
+<div class="viewArea">
+        <a (click)="closeView()" class="backLink"><fa-icon [icon]="['fas','arrow-left']"></fa-icon> Back to Token Request</a>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <h4>Token Name</h4>
+                            <h6>{{token.name}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Author</h4>
+                            <h6>{{token.author}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Website</h4>
+                            <h6>{{token.website}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>SoundCloud</h4>
+                            <h6>{{token.soundCloud}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Symbol</h4>
+                            <h6>{{token.symbol}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Supply</h4>
+                            <h6>{{token.supply}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Decimals</h4>
+                            <h6>{{token.decimals}}</h6>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h4>Token Category</h4>
+                            <h6>{{token.category}}</h6>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-3">
+                    <img class="coinImage" src="{{token.img}}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid secondDivTokenView">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <h4>Token Description</h4>
+                    <h6>{{token.description}}</h6>
+                </div>
+                <div class="col-md-4 col-12">
+                    <button class="btn deployButton" (click)="insertToken()">Add</button>
+                </div>
+            </div>
+        </div>
+        {{statusMassage}}    
+            
+</div>

@@ -1,0 +1,18 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+        <th>Token Name</th>
+        <th>Symbol</th>
+        <th>Contract Address</th>
+        <th>Decimal</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let token of tokens">
+            <td>{{token.Name}}</td>
+            <td>{{token.sym}}</td>
+            <td>{{token.addr}}</td>
+            <td>{{token.decimals}}</td>
+        </tr>
+    </tbody>
+</table>

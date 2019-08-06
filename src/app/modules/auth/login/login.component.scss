@@ -1,0 +1,23 @@
+.loginArea {
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(55,55,55,0.5);
+    margin-top: 50px;
+    max-width: 500px;
+    background-color: rgb(252, 252, 252);
+}
+.customFormStyling {
+    .btn {
+        width: 100%;
+        font-weight: 600;
+    }
+}
+.formLogo {
+    height: 80px;
+    margin: 30px auto 0px auto;
+    display: block;
+}
+.adminHeading {
+    width: 200px;
+    text-align: center;
+}

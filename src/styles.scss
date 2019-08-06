@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html,body,.wrapper {
+    background-color: #E8EEF2;
+    height: 100%;
+}
+.customFormStyling  {
+    input[type="email"],input[type='password'] {
+        border: 0px;
+        box-shadow: 0 0 3px rgba(55,55,55,0.5);
+    }
+    .errorMassage {
+        color: #D93C48;
+    }
+    .btn {
+        color: white;
+        background-color: #4F4C4D;
+    }
+    .btn:hover {
+        color:white;
+        transition: 200ms;
+        background-color: #1A1A1A;
+    }
+}

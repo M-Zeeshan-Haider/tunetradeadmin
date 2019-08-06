@@ -1,0 +1,48 @@
+.profileArea {
+    color: white;
+    transition: 300ms;
+    .sub {
+        font-weight: 600;
+    }
+    .sup {
+        font-size: 10px;
+    }
+}
+.profileArea:hover {
+    background-color: white;
+    border-radius: 25px;
+    color: #343A40;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.logoutCard {
+    position: fixed;
+    right: 0px;
+    top: 60px;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 0 25px rgba(55,55,55,0.5);
+    width: 200px;
+    transition: 300ms;
+    .menuLink {
+        cursor: pointer;
+    }
+}
+.logoutCard:hover {
+    background-color: #343A40;
+    color: white;
+}
+
+.navbar-brand {
+    
+    background: linear-gradient(to right, #bbd2c5,#bbd2c5, #536976);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    img {
+        height: 40px;
+    }
+}

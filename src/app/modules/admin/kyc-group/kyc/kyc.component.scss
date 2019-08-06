@@ -1,0 +1,21 @@
+.nav-tabs-custom {
+    .nav-item {
+        border: none;
+        .nav-link {
+            border: none;
+            margin-bottom: 20px;
+            color: #343A40;
+        }
+    }
+    .kyc-tab-custom {
+        .active {
+            border-bottom: 3px solid #343A40;
+        }
+    }
+    .kyc-vfy-tab-custom {
+        .active {
+            border-bottom: 3px solid #87ceeb;
+            transition: 200ms;
+        }
+    }
+}

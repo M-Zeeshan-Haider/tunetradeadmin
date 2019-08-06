@@ -1,0 +1,19 @@
+<div class="navWrapper">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/admin','home']" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="activeCustom"><fa-icon [icon]="['fas','columns']"></fa-icon> Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['list']" routerLinkActive="activeCustom"><fa-icon [icon]="['fas','list']"></fa-icon> Token List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/admin','home','kyc']"> <fa-icon [icon]="['fa', 'id-card']"></fa-icon> KYC requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"><fa-icon [icon]="['fas','cogs']"></fa-icon> Settings</a>
+        </li>
+        
+    </ul>
+</div>
+    
+    

@@ -1,0 +1,21 @@
+.backLink {
+    color: #343A40;
+    display: block;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.coinImage {
+    width: 100%;
+}
+
+
+.secondDivTokenView {
+    margin-top: 40px;
+    .deployButton {
+        width: 100%;
+        background-color: #343A40;
+        color: white;
+        font-weight: 500;
+    }
+}
