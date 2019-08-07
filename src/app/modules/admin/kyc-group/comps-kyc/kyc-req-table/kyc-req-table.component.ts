@@ -18,7 +18,13 @@ export class KycReqTableComponent implements OnInit {
     this.kyc.getKycReq().subscribe(
       res => {
         if (res.status) {
-          this.kycrequests = res.data;
+          for (let index = 0; index < res.data.length; index++) {
+            
+            if(res.data[index].status==0)
+            this.kycrequests.push(res.data[index]);
+          }
+          console.log(this.kycrequests);
+          
         }
       }
     );
